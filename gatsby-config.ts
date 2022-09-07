@@ -35,6 +35,8 @@ if (process.env.NO_INDEX === 'true') {
   plugins.push('gatsby-plugin-no-index')
 }
 
+console.info(`Building with NO_INDEX=${process.env.NO_INDEX === 'true'}`)
+
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Taiyaki Studios`,
