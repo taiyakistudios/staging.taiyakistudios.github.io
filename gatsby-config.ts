@@ -36,6 +36,7 @@ if (process.env.NO_INDEX === 'true') {
 }
 
 console.info(`Building with NO_INDEX=${process.env.NO_INDEX === 'true'}`)
+console.log(JSON.stringify(process.env, null, 2))
 
 const config: GatsbyConfig = {
   siteMetadata: {
