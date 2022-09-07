@@ -94,12 +94,7 @@ export default ProjectPage
 export const Head: HeadFC<Props['data']> = function ({ data }) {
   const name = data.projectsYaml.name
 
-  return (
-    <>
-      <title>Taiyaki Studios - {name}</title>
-      <DefaultHead />
-    </>
-  )
+  return <DefaultHead title={`Taiyaki Studios - ${name}`} />
 }
 
 export const query = graphql`
