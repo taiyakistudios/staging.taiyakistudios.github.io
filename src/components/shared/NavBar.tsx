@@ -1,10 +1,9 @@
 import styled from '@emotion/styled'
 import React from 'react'
 
-import TaiyakiIcon from '../../images/logo.svg'
-import DiscordIcon from '../../images/discord-logo.svg'
-import TwitterIcon from '../../images/twitter-logo.svg'
 import { css } from '@emotion/react'
+import DiscordIcon from '../../images/discord-logo.svg'
+import TaiyakiIcon from '../../images/logo.svg'
 
 const visuallyHiddenStyles = css`
   /* 
@@ -113,6 +112,7 @@ export function NavBar({ isLight, logoOverride }: Props) {
             <DiscordIcon />
           </MenuItemButton>
         </MenuItem>
+        {/* NOTE(adrian): Disable Twitter button for now
         <MenuItem>
           <MenuItemButton
             href="https://google.com"
@@ -123,7 +123,8 @@ export function NavBar({ isLight, logoOverride }: Props) {
             <span>Twitter button</span>
             <TwitterIcon />
           </MenuItemButton>
-        </MenuItem>
+        </MenuItem> 
+        */}
       </MenuContainer>
     </NavContainer>
   )
