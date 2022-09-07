@@ -1,0 +1,6 @@
+export * from './AboutSection'
+export * from './BusinessSection'
+export * from './DiscordSection'
+export * from './HeroSection'
+export * from './HiringSection'
+export * from './ProjectsSection'

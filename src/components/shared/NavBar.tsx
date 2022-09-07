@@ -1,14 +1,48 @@
 import styled from '@emotion/styled'
 import React from 'react'
 
+import TaiyakiIcon from '../../images/logo.svg'
+import DiscordIcon from '../../images/discord-logo.svg'
+import TwitterIcon from '../../images/twitter-logo.svg'
+import { css } from '@emotion/react'
+
+const visuallyHiddenStyles = css`
+  /* 
+    Hide content visually while keeping it screen reader-accessible:
+    https://www.sarasoueidan.com/blog/accessible-icon-buttons/
+    */
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+`
+
 const NavContainer = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: ${({ theme }) => theme.spacing(2, 3)};
+  align-items: center;
 `
 
-const LogoContainer = styled.div``
+const LogoButton = styled.a<Props>`
+  display: block;
+
+  svg {
+    width: 128px;
+
+    path {
+      fill: ${({ theme, isLight }) =>
+        isLight ? theme.colors.common.white : theme.colors.common.black};
+    }
+  }
+
+  span {
+    ${visuallyHiddenStyles}
+  }
+`
 
 const MenuContainer = styled.ul`
   display: flex;
@@ -24,13 +58,72 @@ const MenuItem = styled.li`
   }
 `
 
-export function NavBar() {
+const MenuItemButton = styled.a<Props>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+
+  ${({ theme }) => theme.breakpoints.up('xs')} {
+    height: 48px;
+    width: 48px;
+  }
+
+  path {
+    fill: ${({ theme, isLight }) =>
+      isLight ? theme.colors.common.white : theme.colors.common.black};
+  }
+
+  span {
+    ${visuallyHiddenStyles}
+  }
+
+  &:hover {
+    background-color: ${({ isLight }) =>
+      isLight ? `rgba(255, 255, 255, 0.5)` : `rgba(0, 0, 0, 0.05)`};
+  }
+`
+
+interface Props {
+  isLight?: boolean
+  logoOverride?: React.ReactNode
+}
+
+export function NavBar({ isLight, logoOverride }: Props) {
   return (
     <NavContainer>
-      <LogoContainer>Logo</LogoContainer>
+      {logoOverride ?? (
+        <LogoButton href="/" isLight={isLight}>
+          <span>Taiyaki Studios logo button</span>
+          <TaiyakiIcon />
+        </LogoButton>
+      )}
       <MenuContainer>
-        <MenuItem>Item A</MenuItem>
-        <MenuItem>Item B</MenuItem>
+        <MenuItem>
+          <MenuItemButton
+            href="https://discord.gg/2mfZA69nAj"
+            target="_blank"
+            rel="noopener noreferrer"
+            isLight={isLight}
+          >
+            <span>Discord button</span>
+            <DiscordIcon />
+          </MenuItemButton>
+        </MenuItem>
+        <MenuItem>
+          <MenuItemButton
+            href="https://google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            isLight={isLight}
+          >
+            <span>Twitter button</span>
+            <TwitterIcon />
+          </MenuItemButton>
+        </MenuItem>
       </MenuContainer>
     </NavContainer>
   )

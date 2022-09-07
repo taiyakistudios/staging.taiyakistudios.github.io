@@ -1,0 +1,68 @@
+slug: vambie
+
+name: Vambie
+
+hero:
+  title: Bringing vampires to life sounded like a bad idea but we did it anyway
+  tagline: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit proin id blandit luctus molestie.
+  cta_title: Bring your own Vambie to life
+  cta_link: https://google.com
+
+general_info:
+  title: More than 7500 vambies waiting to be brought to live and start their journey
+  tagline: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem imperdiet pretium nisl, bibendum a at consectetur volutpat pretium.
+  blocks:
+    - title: Multi-Format Support
+      body: |
+        Our avatar collections export to FBX w/ Unreal support, VRM, VRChat, Snap Lenses, and 
+        more allowing creators to use a variety of tools to create avatar content real time.
+    - title: No Technical Experience Required
+      body: |
+        Use your face and body to control virtual characters without any prior 3D, animation, or motion 
+        capture experience.
+    - title: Generative Avatar Collections
+      body: |
+        We can get thousands of avatars in the hands of your fans and help manage your own community of 
+        fans generating content with your IP.
+
+storyboard:
+  title: This story had to start somewhere
+  items:
+    - imageFileName: sb-image-1
+    - title: Varius eu elit aliquam tempus.
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac ipsum auctor vitae arcu, eu. Adipiscing vitae turpis aenean.
+    - title: Tincidunt libero sit est sem.
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla convallis amet nisi, dictumst nulla et. Eget dapibus neque.
+    - imageFileName: sb-image-2
+    - imageFileName: sb-image-3
+    - title: Imperdiet vitae est pulvinar ac.
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod mattis auctor accumsan adipiscing. Aenean convallis.
+
+project_types:
+  title: Get assets and start creating
+  tagline: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit proin id blandit luctus molestie.
+  items:
+    - title: Snapchat Lens
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod mattis auctor accumsan adipiscing. Aenean convallis.
+    - title: Unreal Engine
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod mattis auctor accumsan adipiscing. Aenean convallis.
+    - title: VRM
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod mattis auctor accumsan adipiscing. Aenean convallis.
+    - title: Other
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod mattis auctor accumsan adipiscing. Aenean convallis.
+
+discord:
+  title: Join our Discord Community
+  tagline: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit proin id blandit luctus molestie.
+  cta_title: Join the Taiyaki Discord
+  cta_link: https://taiyakistudios.com

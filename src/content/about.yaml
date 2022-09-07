@@ -1,0 +1,58 @@
+title: Taiyaki Studios - About
+
+hero:
+  title: About Us
+  tagline: |
+    Headquartered in San Francisco with a distributed team, Taiyaki Studios is backed by top tech 
+    & Metaverse investors in the US, Japan, and Taiwan
+
+members:
+  - name: Jeremy
+    role: Co-founder
+    prompt: This is a prompt
+    image_file_name: default.jpg
+  - name: Igor
+    role: Co-founder
+    prompt: This is a prompt
+    image_file_name: default.jpg
+  - name: Cory
+    role: Unreal Engine Technical Artist
+    prompt: This is a prompt
+    image_file_name: default.jpg
+  - name: Anthony
+    role: Biz Dev/Special Ops
+    prompt: This is a prompt
+    image_file_name: default.jpg
+  - name: Benjamin
+    role: Designer
+    prompt: Artist siting on a iron throne holding a robot fish and color palette digital art
+    image_file_name: benjamin.png
+  - name: Bartosz
+    role: Virtual Prod / Content Creation
+    prompt: Fish in sky da vinci style steampunk
+    image_file_name: bartosz.jpg
+  - name: Neil
+    role: 3D Character Artist
+    prompt: This is a prompt
+    image_file_name: default.jpg
+  - name: Adrian C.
+    role: 3D Artist
+    prompt: Lizard wizard with a star rod in Yoshitaka Amano style
+    image_file_name: adrian-c.png
+  - name: Scott
+    role: 2D Specialist
+    prompt: A Simpsons style Pencil that has come to life
+    image_file_name: scott.png
+  - name: Antony
+    role: 3D Character Design
+    prompt: Green furry space alpaca big grin with beard wearing hat in cgi style
+    image_file_name: antony.png
+  - name: Adrian W.
+    role: Software Engineer
+    prompt: Fluffy black cat with sunglasses on a skateboard anime style
+    image_file_name: adrian-w.png
+
+join_team:
+  title: Join our team
+  cta_title: See Open Positions
+  cta_link: https://taiyakistudios.notion.site/Taiyaki-Studios-Hiring-f53bde7f7d43427bab1672cb6d538b7b

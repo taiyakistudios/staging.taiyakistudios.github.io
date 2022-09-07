@@ -1,4 +1,5 @@
-import { Global, css, ThemeProvider } from '@emotion/react'
+import { css, Global, ThemeProvider } from '@emotion/react'
+import 'normalize.css'
 import React from 'react'
 
 import customTheme from '../../theme'
@@ -13,8 +14,7 @@ export function Layout({ children }: Props) {
       <Global
         styles={css`
           body {
-            margin: 0;
-            padding: 0;
+            font-family: 'Decimal A', 'Decimal B', Arial, Helvetica, sans-serif;
           }
         `}
       />

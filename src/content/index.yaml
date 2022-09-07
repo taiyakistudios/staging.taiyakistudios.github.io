@@ -1,4 +1,54 @@
-title: Test Title
+title: Taiyaki Studios
+
 hero:
-  title: An updated super amazing title
-  tagline: Become a virtual celebrity on Tiktok, Twitch, or YouTube with a custom avatar from Taiyaki Studios.
+  title: Avatars, production tools, and community resources for next-gen media
+  tagline: |
+    Taiyaki Studios builds avatars and avatar collections optimized for Tiktok and Youtube content creation. 
+    The future of media is social-first, powered by virtual characters, and supercharged by fan-generated 
+    content. We’re here for it.
+  main_cta_title: Claim Your Avatar & Start Creating
+  main_cta_link: https://discord.gg/2mfZA69nAj
+  secondary_cta_title: Partner With Us
+  secondary_cta_link: https://google.com
+
+business:
+  overline: Enabling content creators
+  title: Partner with us
+  tagline: |
+    Whether it’s 1 or 10,000 avatars - let’s talk. Our avatars are designed for real-time content creation, 
+    enabling avatar holders to create Tiktok and Youtube content at the same pace as live-action content.
+  cta_title: Partner With Us
+  cta_link: https://google.com
+  blocks:
+    - title: Multi-Format Support
+      body: |
+        Our avatar collections export to FBX w/ Unreal support, VRM, VRChat, Snap Lenses, and 
+        more allowing creators to use a variety of tools to create avatar content real time.
+    - title: No Technical Experience Required
+      body: |
+        Use your face and body to control virtual characters without any prior 3D, animation, or motion 
+        capture experience.
+    - title: Generative Avatar Collections
+      body: |
+        We can get thousands of avatars in the hands of your fans and help manage your own community of 
+        fans generating content with your IP.
+
+projects:
+  overline: Check out other projects we’ve been working on
+  items:
+    - name: Mister Yaki
+      link: https://www.youtube.com/c/TaiyakiStudios
+      imageName: project-mryaki
+    - name: Vambie
+      imageName: project-vambie
+
+hiring:
+  title: We’re hiring
+  tagline: Help us empower the next generation of creators. We are hiring 3D artists, avatar creators, Unreal engineers and more!
+  cta_title: See Open Positions
+  cta_link: https://taiyakistudios.notion.site/Taiyaki-Studios-Hiring-f53bde7f7d43427bab1672cb6d538b7b
+
+about:
+  title: About us
+  tagline: Headquartered in San Francisco with a distributed team, Taiyaki Studios is backed by top tech & Metaverse investors in the US, Japan, and Taiwan.
+  cta_title: Meet the Team

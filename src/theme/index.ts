@@ -1,9 +1,11 @@
+import { breakpoints } from './breakpoints'
 import { colors } from './colors'
 import { spacing } from './spacing'
 
 const customTheme = {
   colors,
   spacing,
+  breakpoints,
 }
 
 export default customTheme
