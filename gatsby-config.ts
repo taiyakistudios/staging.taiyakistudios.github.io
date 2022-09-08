@@ -51,10 +51,12 @@ console.info(`Building with NO_INDEX=${process.env.NO_INDEX === 'true'}`)
 
 const siteUrl =
   process.env.NODE_ENV === 'development' ? `http://localhost:8000` : process.env.SITE_URL
+const siteDomain = process.env.NODE_ENV === 'development' ? '' : process.env.SITE_DOMAIN
 
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Taiyaki Studios`,
+    siteDomain,
     siteUrl,
     description: 'Avatars, production tools, and community resources for next-gen media',
   },

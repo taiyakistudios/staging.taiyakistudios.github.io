@@ -16,7 +16,7 @@ export function DefaultHead({
   ogImagePath = '/og-image.jpg',
   children,
 }: Props) {
-  const { siteUrl } = useSiteMetadata()
+  const { siteDomain, siteUrl } = useSiteMetadata()
 
   return (
     <>
@@ -47,6 +47,15 @@ export function DefaultHead({
         type="text/css"
         href="https://cloud.typography.com/8003020/6925432/css/fonts.css"
       />
+
+      {/* Analytics */}
+      {siteDomain && (
+        <script
+          defer
+          data-domain={siteDomain}
+          src="https://plausible.io/js/plausible.js"
+        />
+      )}
     </>
   )
 }
