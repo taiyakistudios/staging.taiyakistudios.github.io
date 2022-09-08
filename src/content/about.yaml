@@ -9,8 +9,8 @@ hero:
 members:
   - name: Jeremy
     role: Co-founder
-    prompt: This is a prompt
-    image_file_name: default.jpg
+    prompt: A hooded smiling male druid with red hair teaching computer science in the style of lanfeust de troy, graphic novel
+    image_file_name: jeremy.png
   - name: Igor
     role: Co-founder
     prompt: This is a prompt
