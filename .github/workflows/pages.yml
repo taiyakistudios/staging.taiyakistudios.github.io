@@ -85,6 +85,7 @@ jobs:
         env:
           PREFIX_PATHS: 'true'
           NO_INDEX: ${{ secrets.NO_INDEX }}
+          SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
           SITE_URL: ${{ secrets.SITE_URL }}
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
       - name: Upload artifact
