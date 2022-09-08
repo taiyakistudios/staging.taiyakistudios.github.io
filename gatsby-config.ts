@@ -29,6 +29,18 @@ const plugins = [
       },
     },
   },
+  {
+    resolve: `gatsby-plugin-manifest`,
+    options: {
+      name: `Taiyaki Studios`,
+      short_name: `Taiyaki Studios`,
+      start_url: `/`,
+      background_color: `#fff`,
+      theme_color: `#000`,
+      display: `standalone`,
+      icon: 'src/images/favicon.svg',
+    },
+  },
 ]
 
 if (process.env.NO_INDEX === 'true') {

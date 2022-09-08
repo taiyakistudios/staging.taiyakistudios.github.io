@@ -12,6 +12,9 @@ export function DefaultHead({ title = content.seo.title, children }: Props) {
     <>
       <title>{title}</title>
       <meta name="description" content={content.seo.description} />
+      <meta property="og:image" content="/og-image.jpg" />
+      <meta property="og:image:width" content="500" />
+      <meta property="og:image:width" content="333" />
       {children}
       <link
         id="font-css"
