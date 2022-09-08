@@ -49,10 +49,13 @@ if (process.env.NO_INDEX === 'true') {
 
 console.info(`Building with NO_INDEX=${process.env.NO_INDEX === 'true'}`)
 
+const siteUrl =
+  process.env.NODE_ENV === 'development' ? `http://localhost:8000` : process.env.SITE_URL
+
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Taiyaki Studios`,
-    siteUrl: `https://taiyakistudios.com`,
+    siteUrl,
     description: 'Avatars, production tools, and community resources for next-gen media',
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.

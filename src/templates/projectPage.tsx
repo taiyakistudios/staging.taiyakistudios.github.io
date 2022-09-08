@@ -94,7 +94,13 @@ export default ProjectPage
 export const Head: HeadFC<Props['data']> = function ({ data }) {
   const name = data.projectsYaml.name
 
-  return <DefaultHead title={`Taiyaki Studios - ${name}`} />
+  return (
+    <DefaultHead
+      title={`Taiyaki Studios - ${name}`}
+      description={data.projectsYaml.description}
+      ogImagePath={data.projectsYaml.metadata.og_image_path}
+    />
+  )
 }
 
 export const query = graphql`
@@ -108,6 +114,10 @@ export const query = graphql`
     projectsYaml(slug: { eq: $slug }) {
       slug
       name
+      description
+      metadata {
+        og_image_path
+      }
       hero {
         title
         tagline

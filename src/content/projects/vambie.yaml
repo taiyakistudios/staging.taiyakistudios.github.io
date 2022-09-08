@@ -1,6 +1,10 @@
 slug: vambie
 
 name: Vambie
+description: Bringing vampires to life sounded like a bad idea but we did it anyway
+
+metadata:
+  og_image_path: /vambie-og-image.jpg
 
 hero:
   title: Bringing vampires to life sounded like a bad idea but we did it anyway
