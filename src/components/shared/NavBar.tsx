@@ -4,6 +4,7 @@ import React from 'react'
 import { css } from '@emotion/react'
 import DiscordIcon from '../../images/discord-logo.svg'
 import TaiyakiIcon from '../../images/logo.svg'
+import content from '../../content/default.yaml'
 
 const visuallyHiddenStyles = css`
   /* 
@@ -103,7 +104,7 @@ export function NavBar({ isLight, logoOverride }: Props) {
       <MenuContainer>
         <MenuItem>
           <MenuItemButton
-            href="https://discord.gg/2mfZA69nAj"
+            href={content.discord_invite_link}
             target="_blank"
             rel="noopener noreferrer"
             isLight={isLight}

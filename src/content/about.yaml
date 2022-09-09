@@ -17,8 +17,8 @@ members:
     image_file_name: default.jpg
   - name: Cory
     role: Unreal Engine Technical Artist
-    prompt: This is a prompt
-    image_file_name: default.jpg
+    prompt: Mr. Yaki himself
+    image_file_name: cory.png
   - name: Anthony
     role: Biz Dev/Special Ops
     prompt: This is a prompt
@@ -33,8 +33,8 @@ members:
     image_file_name: bartosz.jpg
   - name: Neil
     role: 3D Character Artist
-    prompt: This is a prompt
-    image_file_name: default.jpg
+    prompt: Sloth wearing a beanie, 3d render
+    image_file_name: neil.png
   - name: Adrian C.
     role: 3D Artist
     prompt: Lizard wizard with a star rod in Yoshitaka Amano style
