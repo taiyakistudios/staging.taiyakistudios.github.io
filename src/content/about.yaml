@@ -13,8 +13,8 @@ members:
     image_file_name: jeremy.png
   - name: Igor
     role: Co-founder
-    prompt: This is a prompt
-    image_file_name: default.jpg
+    prompt: A friendly magician fish enchanting a painting, digital art unreal 4d 
+    image_file_name: igor.png
   - name: Cory
     role: Unreal Engine Technical Artist
     prompt: Mr. Yaki himself
