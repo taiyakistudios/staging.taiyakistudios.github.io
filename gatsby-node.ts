@@ -4,7 +4,7 @@ import path from 'path'
 export async function createPages({ actions, graphql }: CreatePagesArgs) {
   // Create project pages
 
-  const { data: projectsData } = await graphql<any>(`
+  const { data } = await graphql<any>(`
     query {
       allProjectsYaml {
         edges {
@@ -13,10 +13,18 @@ export async function createPages({ actions, graphql }: CreatePagesArgs) {
           }
         }
       }
+      allProjectTypesYaml {
+        edges {
+          node {
+            slug
+            project_slug
+          }
+        }
+      }
     }
   `)
 
-  for (const { node } of projectsData.allProjectsYaml.edges) {
+  for (const { node } of data.allProjectsYaml.edges) {
     const { slug } = node
     actions.createPage({
       path: `projects/${slug}`,
@@ -27,6 +35,21 @@ export async function createPages({ actions, graphql }: CreatePagesArgs) {
         heroFrontImagePath: `projects/${slug}/hero-front.png`,
         mosaicBgImagePath: `projects/${slug}/mosaic-bg.jpg`,
         discordFrontImagePath: `projects/${slug}/discord-front.png`,
+      },
+    })
+  }
+
+  for (const { node } of data.allProjectTypesYaml.edges) {
+    const { slug, project_slug } = node
+    console.log(slug)
+
+    actions.createPage({
+      path: `projects/${project_slug}/${slug}`,
+      component: path.resolve('./src/templates/projectTypePage.tsx'),
+      context: {
+        projectSlug: project_slug,
+        slug,
+        heroFrontImagePath: `project-types/${slug}/hero-front.png`,
       },
     })
   }

@@ -1,0 +1,50 @@
+project_slug: vambie
+slug: unreal-engine
+name: Unreal Engine
+description: Description of Unreal Engine goes here.
+
+hero:
+  title: Start creating with Unreal Engine
+  tagline: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit proin id blandit luctus molestie.
+  cta_title: Download Assets
+  cta_link: https://google.com
+
+key_points:
+  title: Why Unreal Engine
+  tagline: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem imperdiet pretium nisl, bibendum a at consectetur volutpat pretium.
+  blocks:
+    - title: Lorem ipsum dolor sit amet
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem imperdiet pretium nisl.
+    - title: Lorem ipsum dolor sit amet
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem imperdiet pretium nisl.
+    - title: Lorem ipsum dolor sit amet
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem imperdiet pretium nisl.
+
+how_it_works:
+  title: How it works
+  tagline: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit proin id blandit luctus molestie.
+  items:
+    - title: Download
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod mattis auctor accumsan adipiscing. Aenean convallis.
+    - title: Explore
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod mattis auctor accumsan adipiscing. Aenean convallis.
+    - title: Setup
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod mattis auctor accumsan adipiscing. Aenean convallis.
+    - title: Create
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod mattis auctor accumsan adipiscing. Aenean convallis.
+
+get_assets:
+  title: Get the assets
+  tagline: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit proin id blandit luctus molestie.
+  cta_title: Get Unreal Engine Assets Now
+  cta_link: https://taiyakistudios.com
