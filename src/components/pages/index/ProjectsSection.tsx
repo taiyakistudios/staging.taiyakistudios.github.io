@@ -94,6 +94,17 @@ const ProjectItemsWrapper = styled.div`
   }
 `
 
+const ProjectItemsWrapperText = styled.p`
+  margin-bottom: ${({ theme }) => theme.spacing(3)};
+  color: #b9b9b9;
+  line-height: 1.5;
+  font-size: 0.8rem;
+
+  ${({ theme }) => theme.breakpoints.up('xs')} {
+    font-size: 1rem;
+  }
+`
+
 const ProjectItem = styled(H1.withComponent('a'))`
   display: block;
   text-decoration: none;
@@ -197,7 +208,12 @@ export function ProjectsSection({ overline, projects }: Props) {
       <ContentWrapper>
         <TextWrapper>
           <StyledH3>{overline}</StyledH3>
-          <ProjectItemsWrapper>{renderProjectItems()}</ProjectItemsWrapper>
+          <ProjectItemsWrapper>
+            <ProjectItemsWrapperText>
+              Click on a project to view more details
+            </ProjectItemsWrapperText>
+            {renderProjectItems()}
+          </ProjectItemsWrapper>
         </TextWrapper>
         {currentImage && (
           <DesktopImageContainer>
