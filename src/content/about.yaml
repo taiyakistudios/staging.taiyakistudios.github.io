@@ -13,7 +13,7 @@ members:
     image_file_name: jeremy.png
   - name: Igor
     role: Co-founder
-    prompt: A friendly magician fish enchanting a painting, digital art unreal 4d 
+    prompt: A friendly magician fish enchanting a painting, digital art unreal 4d
     image_file_name: igor.png
   - name: Cory
     role: Unreal Engine Technical Artist
@@ -21,7 +21,7 @@ members:
     image_file_name: cory.png
   - name: Anthony
     role: Biz Dev/Special Ops
-    prompt: This is a prompt
+    prompt: A 3d render of a little taiyaki frowning wearing a hoodie and gold chain
     image_file_name: default.jpg
   - name: Benjamin
     role: Designer
