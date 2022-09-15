@@ -51,16 +51,20 @@ project_types:
   tagline: |
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit proin id blandit luctus molestie.
   items:
-    - title: Snapchat Lens
+    - id: snapchat_lens
+      title: Snapchat Lens
       body: |
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod mattis auctor accumsan adipiscing. Aenean convallis.
-    - title: Unreal Engine
+    - id: unreal_engine
+      title: Unreal Engine
       body: |
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod mattis auctor accumsan adipiscing. Aenean convallis.
-    - title: VRM
+    - id: vrm
+      title: VRM
       body: |
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod mattis auctor accumsan adipiscing. Aenean convallis.
-    - title: Other
+    - id: other
+      title: Other
       body: |
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod mattis auctor accumsan adipiscing. Aenean convallis.
 
