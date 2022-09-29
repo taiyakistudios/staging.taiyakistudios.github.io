@@ -15,6 +15,8 @@ export function Layout({ children }: Props) {
         styles={css`
           body {
             font-family: 'Decimal A', 'Decimal B', Arial, Helvetica, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
           }
         `}
       />
