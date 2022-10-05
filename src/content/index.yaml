@@ -17,7 +17,7 @@ hero:
 
 vambie:
   title: Vambies are here
-  cta_title: Learn more
+  cta_title: Get yours FREE
   cta_link: https://vambie.com
 
 business:
@@ -48,11 +48,9 @@ projects:
     - name: Mister Yaki
       link: https://www.youtube.com/c/TaiyakiStudios
       imageName: project-mryaki
-
-    # TODO(adrian): Re-add this once Vambie is ready to launch
-    # - name: Vambie
-    #   link: /projects/vambie
-    #   imageName: project-vambie
+    - name: Vambie
+      link: https://vambie.com
+      imageName: project-vambie
 
 hiring:
   title: We’re hiring
