@@ -36,6 +36,7 @@ const TextWrapper = styled(SectionTextWrapper)`
     text-align: left;
     align-items: flex-start;
     flex: 1;
+    margin-top: 0;
   }
 `
 

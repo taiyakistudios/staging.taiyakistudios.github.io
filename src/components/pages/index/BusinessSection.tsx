@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 
 import {
@@ -13,6 +14,10 @@ import {
 
 const MainContainer = styled(SectionContainer)`
   min-height: auto;
+`
+
+const MainContentWrapper = styled(SectionContentWrapper)`
+  z-index: 2;
 `
 
 const MainTextWrapper = styled(SectionTextWrapper)`
@@ -107,7 +112,18 @@ export function BusinessSection({
   return (
     <>
       <MainContainer>
-        <SectionContentWrapper>
+        <StaticImage
+          src="../../../images/business-bg.jpg"
+          alt="Hero image background"
+          layout="fullWidth"
+          style={{
+            position: 'absolute',
+            width: '100%',
+            height: '100%',
+            zIndex: 1,
+          }}
+        />
+        <MainContentWrapper>
           <Overline>{overline}</Overline>
           <MainTextWrapper>
             <H2>{title}</H2>
@@ -116,7 +132,7 @@ export function BusinessSection({
               {ctaTitle}
             </MainCtaButton>
           </MainTextWrapper>
-        </SectionContentWrapper>
+        </MainContentWrapper>
       </MainContainer>
       <BottomContainer>
         <BottomContentWrapper>
