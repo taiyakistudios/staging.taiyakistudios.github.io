@@ -4,6 +4,8 @@ import React from 'react'
 
 import {
   H2,
+  H4,
+  H5,
   SectionContainer,
   SectionContentWrapper,
   SectionTextWrapper,
@@ -103,7 +105,8 @@ export function StoryboardSection({ title, items }: Props) {
       } else {
         return (
           <GridItem key={index}>
-            <GridItemTitle>{item.title!}</GridItemTitle>
+            {/* <GridItemTitle>{item.title!}</GridItemTitle> */}
+            <H5>{item.title!}</H5>
             <GridItemBody>{item.body!}</GridItemBody>
           </GridItem>
         )

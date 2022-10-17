@@ -34,15 +34,22 @@ const baseStyle = (theme: Theme, isLight?: boolean, isOutline?: boolean) => {
     border-radius: ${theme.spacing(1)};
     height: ${theme.spacing(6)};
     padding: ${theme.spacing(0, 3)};
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
     font-size: 0.8rem;
     background-color: ${getBackgroundColor()};
     color: ${getColor()};
     border: ${getBorder()};
+    transition: 0.2s all;
 
     &:hover {
       background-color: ${getHoverBackgroundColor()};
+      transition: 0.4s all;
+    }
+
+    &:active {
+      transform: scale(0.98);
+      transition: 0.4s all;
     }
 
     ${theme.breakpoints.up('xs')} {
