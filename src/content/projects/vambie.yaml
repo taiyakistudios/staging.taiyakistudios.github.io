@@ -9,8 +9,10 @@ hero:
   title: Bringing vampires to life sounded like a bad idea but we did it anyway
   tagline: |
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit proin id blandit luctus molestie.
-  cta_title: Bring your own Vambie to life
-  cta_link: https://google.com
+  main_cta_title: Bring your own Vambie to life
+  main_cta_link: https://google.com
+  secondary_cta_title: Get assets via email
+  secondary_cta_link: https://google.com
 
 general_info:
   title: More than 7500 vambies waiting to be brought to live and start their journey
@@ -51,16 +53,20 @@ project_types:
   tagline: |
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit proin id blandit luctus molestie.
   items:
-    - title: Snapchat Lens
+    - id: snapchat_lens
+      title: Snapchat Lens
       body: |
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod mattis auctor accumsan adipiscing. Aenean convallis.
-    - title: Unreal Engine
+    - id: unreal_engine
+      title: Unreal Engine
       body: |
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod mattis auctor accumsan adipiscing. Aenean convallis.
-    - title: VRM
+    - id: vrm
+      title: VRM
       body: |
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod mattis auctor accumsan adipiscing. Aenean convallis.
-    - title: Other
+    - id: other
+      title: Other
       body: |
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod mattis auctor accumsan adipiscing. Aenean convallis.
 

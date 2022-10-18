@@ -1,6 +1,11 @@
 import styled from '@emotion/styled'
 import React from 'react'
 
+import UnrealEngineLogo from '../../../images/project-type-logos/unreal-engine-logo.svg'
+import VrmLogo from '../../../images/project-type-logos/vrm-logo.svg'
+import SnapchatLensLogo from '../../../images/project-type-logos/snapchat-lens-logo.svg'
+import OtherLogo from '../../../images/project-type-logos/other-logo.svg'
+
 import {
   H2,
   SectionContainer,
@@ -40,11 +45,34 @@ const Grid = styled.div`
 `
 
 const GridItem = styled.div`
+  display: flex;
+  flex-direction: column;
   padding: ${({ theme }) => theme.spacing(3)};
   background-color: rgba(255, 255, 255, 0.05);
 
   ${({ theme }) => theme.breakpoints.up('md')} {
     padding: ${({ theme }) => theme.spacing(5)};
+    flex-direction: row;
+  }
+`
+
+const GridItemIconContainer = styled.div`
+  min-width: 80px;
+  width: 80px;
+
+  svg {
+    width: 100%;
+  }
+`
+
+const GridItemTextContainer = styled.div`
+  margin-top: ${({ theme }) => theme.spacing(2)};
+  display: flex;
+  flex-direction: column;
+
+  ${({ theme }) => theme.breakpoints.up('md')} {
+    margin-top: 0;
+    margin-left: ${({ theme }) => theme.spacing(3)};
   }
 `
 
@@ -60,14 +88,29 @@ const GridItemBody = styled.p`
   margin-bottom: 0;
 
   ${({ theme }) => theme.breakpoints.up('md')} {
-    margin-top: ${({ theme }) => theme.spacing(3)};
+    margin-top: ${({ theme }) => theme.spacing(2)};
   }
 `
+
+function getLogoForProjectType(id: string) {
+  // TODO(adrian): Extract string cases to an enum
+  switch (id) {
+    case 'unreal_engine':
+      return <UnrealEngineLogo />
+    case 'snapchat_lens':
+      return <SnapchatLensLogo />
+    case 'vrm':
+      return <VrmLogo />
+    case 'other':
+      return <OtherLogo />
+  }
+}
 
 interface Props {
   title: string
   tagline: string
   items: {
+    id: string
     title: string
     body: string
   }[]
@@ -75,10 +118,15 @@ interface Props {
 
 export function ProjectTypesSection({ title, tagline, items }: Props) {
   function renderGridItems() {
+    console.log(items)
+
     return items.map((item, index) => (
       <GridItem key={index}>
-        <GridItemTitle>{item.title}</GridItemTitle>
-        <GridItemBody>{item.body}</GridItemBody>
+        <GridItemIconContainer>{getLogoForProjectType(item.id)}</GridItemIconContainer>
+        <GridItemTextContainer>
+          <GridItemTitle>{item.title}</GridItemTitle>
+          <GridItemBody>{item.body}</GridItemBody>
+        </GridItemTextContainer>
       </GridItem>
     ))
   }
