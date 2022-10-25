@@ -62,6 +62,24 @@ export const H6 = styled.h6`
   }
 `
 
+export const H4 = styled.h4`
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+`
+
+export const H5 = styled.h5`
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+`
+
+export const H6 = styled.h6`
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+`
+
 export const Tagline = styled.p`
   font-size: 1rem;
   font-weight: 300;
