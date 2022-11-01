@@ -27,10 +27,6 @@ members:
     role: Designer
     prompt: Artist siting on a iron throne holding a robot fish and color palette digital art
     image_file_name: benjamin.png
-  - name: Bartosz
-    role: Virtual Prod / Content Creation
-    prompt: Fish in sky da vinci style steampunk
-    image_file_name: bartosz.jpg
   - name: Neil
     role: 3D Character Artist
     prompt: Sloth wearing a beanie, 3d render
