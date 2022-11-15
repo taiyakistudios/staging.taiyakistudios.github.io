@@ -1,6 +1,6 @@
 import React from 'react'
 
-import content from '../../content/default.yaml'
+import content from '../../content/yaml/default.yaml'
 import useSiteMetadata from '../../hooks/useSiteMetadata'
 
 interface Props {

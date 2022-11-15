@@ -10,7 +10,7 @@ import {
   VambieSection,
 } from '../components/pages/index'
 import { DefaultHead, Footer, Layout } from '../components/shared'
-import content from '../content/index.yaml'
+import content from '../content/yaml/index.yaml'
 
 function IndexPage() {
   return (

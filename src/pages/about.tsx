@@ -3,7 +3,7 @@ import React from 'react'
 
 import { HeroSection, JoinTeamSection, MembersSection } from '../components/pages/about'
 import { DefaultHead, Footer, Layout } from '../components/shared'
-import content from '../content/about.yaml'
+import content from '../content/yaml/about.yaml'
 
 function AboutPage() {
   const members = content.members.map((member: any) => ({

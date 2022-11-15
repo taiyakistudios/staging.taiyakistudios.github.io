@@ -17,8 +17,15 @@ const plugins = [
   {
     resolve: 'gatsby-source-filesystem',
     options: {
-      name: 'content',
-      path: './src/content/',
+      name: 'yaml',
+      path: './src/content/yaml',
+    },
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      name: 'markdown',
+      path: './src/content/markdown',
     },
   },
   {
@@ -39,6 +46,19 @@ const plugins = [
       theme_color: `#000`,
       display: `standalone`,
       icon: 'src/images/favicon.svg',
+    },
+  },
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            maxWidth: 600,
+          },
+        },
+      ],
     },
   },
 ]

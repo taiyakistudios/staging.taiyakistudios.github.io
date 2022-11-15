@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import React from 'react'
 
-import content from '../../content/default.yaml'
+import content from '../../content/yaml/default.yaml'
 
 export const Container = styled.footer<Props>`
   padding: ${({ theme }) => theme.spacing(8, 0)};
