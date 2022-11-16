@@ -4,7 +4,7 @@ import React from 'react'
 import { css } from '@emotion/react'
 import DiscordIcon from '../../images/discord-logo.svg'
 import TaiyakiIcon from '../../images/logo.svg'
-import content from '../../content/default.yaml'
+import content from '../../content/yaml/default.yaml'
 
 const visuallyHiddenStyles = css`
   /* 

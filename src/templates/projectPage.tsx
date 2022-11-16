@@ -106,7 +106,7 @@ export const Head: HeadFC<Props['data']> = function ({ data }) {
 }
 
 export const query = graphql`
-  query (
+  query ProjectsQuery(
     $slug: String!
     $heroFrontImagePath: String!
     $mosaicBgImagePath: String

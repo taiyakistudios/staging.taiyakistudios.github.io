@@ -2,10 +2,8 @@ import { CreatePagesArgs } from 'gatsby'
 import path from 'path'
 
 export async function createPages({ actions, graphql }: CreatePagesArgs) {
-  // Create project pages
-
   const { data } = await graphql<any>(`
-    query {
+    query AllPagesDataQuery {
       allProjectsYaml {
         edges {
           node {
@@ -21,8 +19,23 @@ export async function createPages({ actions, graphql }: CreatePagesArgs) {
           }
         }
       }
+      allGuidesMarkdown: allMarkdownRemark(
+        filter: { frontmatter: { category: { eq: "guide" } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              slug
+              date
+              title
+            }
+          }
+        }
+      }
     }
   `)
+
+  // Create project pages
 
   for (const { node } of data.allProjectsYaml.edges) {
     const { slug } = node
@@ -39,9 +52,10 @@ export async function createPages({ actions, graphql }: CreatePagesArgs) {
     })
   }
 
+  // Create project type pages
+
   for (const { node } of data.allProjectTypesYaml.edges) {
     const { slug, project_slug } = node
-    console.log(slug)
 
     actions.createPage({
       path: `projects/${project_slug}/${slug}`,
@@ -50,6 +64,21 @@ export async function createPages({ actions, graphql }: CreatePagesArgs) {
         projectSlug: project_slug,
         slug,
         heroFrontImagePath: `project-types/${slug}/hero-front.png`,
+      },
+    })
+  }
+
+  // Create guide pages
+
+  for (const { node } of data.allGuidesMarkdown.edges) {
+    const { slug } = node.frontmatter
+
+    actions.createPage({
+      path: `guides/${slug}`,
+      component: path.resolve('./src/templates/guidePage.tsx'),
+      context: {
+        slug,
+        imageFilesPath: `guides/${slug}`,
       },
     })
   }

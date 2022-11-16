@@ -86,7 +86,11 @@ export const Head: HeadFC<Props['data']> = function ({ data }) {
 }
 
 export const query = graphql`
-  query ($projectSlug: String!, $slug: String!, $heroFrontImagePath: String!) {
+  query ProjectTypeQuery(
+    $projectSlug: String!
+    $slug: String!
+    $heroFrontImagePath: String!
+  ) {
     projectsYaml(slug: { eq: $projectSlug }) {
       slug
       name
