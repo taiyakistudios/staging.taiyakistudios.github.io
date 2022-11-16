@@ -4,6 +4,7 @@ import React from 'react'
 import {
   H1,
   NavBar,
+  Overline,
   SectionContainer,
   SectionContentWrapper,
   SectionTextWrapper,
@@ -45,6 +46,10 @@ const TextWrapper = styled(SectionTextWrapper)`
   }
 `
 
+const Title = styled(H1)`
+  margin-top: ${({ theme }) => theme.spacing(1)};
+`
+
 interface Props {
   title: string
   tagline: string
@@ -56,7 +61,8 @@ export function HeroSection({ title, tagline }: Props) {
       <ContentWrapper>
         <NavBar />
         <TextWrapper>
-          <H1>{title}</H1>
+          <Overline>Guide</Overline>
+          <Title>{title}</Title>
           <Tagline>{tagline}</Tagline>
         </TextWrapper>
       </ContentWrapper>

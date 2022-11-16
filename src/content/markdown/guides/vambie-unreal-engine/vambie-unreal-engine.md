@@ -1,17 +1,15 @@
 ---
-slug: 'unreal-engine'
+slug: 'vambie-unreal-engine'
 category: 'guide'
 date: '2022-11-15'
-title: 'Unreal Engine'
-description: 'Get your avatar working with Unreal Engine'
+title: 'Vambie - Unreal Engine'
+description: 'Get your Vambie working with Unreal Engine'
 ---
 
 ## Downloads
 
 1. Download the [Epic Games Launcher](https://store.epicgames.com/en-US/download).
-
 2. Open the Launcher and Create an Epic Games account.
-
 3. Navigate to the “Unreal Engine” tab and install version 5.0.2.
 
 Here is a video guide:

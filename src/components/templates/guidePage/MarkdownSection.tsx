@@ -25,6 +25,14 @@ const MarkdownWrapper = styled.div`
   max-width: 600px;
 `
 
+const H1 = styled.h1`
+  margin: ${({ theme }) => theme.spacing(3, 0)};
+
+  &:not(:first-of-type) {
+    margin-top: ${({ theme }) => theme.spacing(5)};
+  }
+`
+
 const H2 = styled.h2`
   margin: ${({ theme }) => theme.spacing(3, 0)};
 
@@ -53,15 +61,30 @@ const Code = styled.code`
   padding: ${({ theme }) => theme.spacing(0, 0.5)};
   border-radius: ${({ theme }) => theme.spacing(0.5)};
   line-break: anywhere;
+
+  ${({ theme }) => theme.breakpoints.up('xs')} {
+    line-break: normal;
+  }
 `
 
 const OrderedList = styled.ol`
   padding-inline-start: 32px;
+  font-weight: 300;
+  line-height: 2;
+`
+
+const UnorderedList = styled.ul`
+  font-weight: 300;
+  line-height: 2;
 `
 
 const Link = styled.a`
   color: ${({ theme }) => theme.colors.common.black};
   font-weight: 500;
+
+  &:hover {
+    opacity: 0.5;
+  }
 `
 
 const Image = styled(GatsbyImage)`
@@ -122,9 +145,11 @@ export function MarkdownSection({ rawMarkdownBody, imagesByName }: Props) {
         <MarkdownWrapper>
           <Markdown
             components={{
+              h1: (props) => <H1 {...props} />,
               h2: (props) => <H2 {...props} />,
               p: (props) => <Paragraph {...props} />,
               ol: (props) => <OrderedList {...props} />,
+              ul: (props) => <UnorderedList {...props} />,
               code: (props) => <Code {...props} />,
               img: renderImg,
               a: renderA,

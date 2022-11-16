@@ -78,7 +78,10 @@ export const query = graphql`
       rawMarkdownBody
     }
     imageFiles: allFile(
-      filter: { relativeDirectory: { eq: $imageFilesPath }, ext: { in: [".png"] } }
+      filter: {
+        relativeDirectory: { eq: $imageFilesPath }
+        ext: { in: [".png", ".jpg"] }
+      }
     ) {
       edges {
         node {
