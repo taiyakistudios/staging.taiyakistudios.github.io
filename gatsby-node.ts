@@ -19,14 +19,12 @@ export async function createPages({ actions, graphql }: CreatePagesArgs) {
           }
         }
       }
-      allGuidesMarkdown: allMarkdownRemark(
-        filter: { frontmatter: { category: { eq: "guide" } } }
-      ) {
+      allMarkdownRemark(filter: { frontmatter: { published: { eq: true } } }) {
         edges {
           node {
             frontmatter {
+              category
               slug
-              date
               title
             }
           }
@@ -68,18 +66,31 @@ export async function createPages({ actions, graphql }: CreatePagesArgs) {
     })
   }
 
-  // Create guide pages
+  // Create markdown pages
 
-  for (const { node } of data.allGuidesMarkdown.edges) {
-    const { slug } = node.frontmatter
+  for (const { node } of data.allMarkdownRemark.edges) {
+    const { category, slug } = node.frontmatter
 
-    actions.createPage({
-      path: `guides/${slug}`,
-      component: path.resolve('./src/templates/guidePage.tsx'),
-      context: {
-        slug,
-        imageFilesPath: `guides/${slug}`,
-      },
-    })
+    if (category === 'guide') {
+      actions.createPage({
+        path: `guides/${slug}`,
+        component: path.resolve('./src/templates/guidePage.tsx'),
+        context: {
+          slug,
+          imageFilesPath: `guides/${slug}`,
+        },
+      })
+    } else if (category === 'career') {
+      actions.createPage({
+        path: `careers/${slug}`,
+        component: path.resolve('./src/templates/careerPage.tsx'),
+        context: {
+          slug,
+          imageFilesPath: `careers/${slug}`,
+        },
+      })
+    } else {
+      throw new Error(`Unknown markdown page category ${category}`)
+    }
   }
 }

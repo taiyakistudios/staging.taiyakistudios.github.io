@@ -35,8 +35,8 @@ const StyledContentWrapper = styled(SectionContentWrapper)`
 const StyledTextWrapper = styled(SectionTextWrapper)`
   margin-top: ${({ theme }) => theme.spacing(3)};
 
-  ${({ theme }) => theme.breakpoints.up('xs')} {
-    margin-top: auto;
+  ${({ theme }) => theme.breakpoints.up('md')} {
+    margin-top: ${({ theme }) => theme.spacing(7)};
   }
 `
 

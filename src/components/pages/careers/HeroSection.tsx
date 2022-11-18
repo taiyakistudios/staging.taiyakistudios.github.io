@@ -4,7 +4,6 @@ import React from 'react'
 import {
   H1,
   NavBar,
-  Overline,
   SectionContainer,
   SectionContentWrapper,
   SectionTextWrapper,
@@ -13,32 +12,21 @@ import {
 
 const StyledContainer = styled(SectionContainer)`
   position: relative;
-  min-height: 0;
-  background-color: #f5f5f5;
+  min-height: auto;
 `
 
-const ContentWrapper = styled(SectionContentWrapper)`
+const StyledContentWrapper = styled(SectionContentWrapper)`
   margin-top: ${({ theme }) => theme.spacing(2)};
+  margin-bottom: 0;
   z-index: 2;
 
   ${({ theme }) => theme.breakpoints.up('xs')} {
     margin-top: ${({ theme }) => theme.spacing(3)};
-  }
-
-  ${({ theme }) => theme.breakpoints.up('xl')} {
-    margin-top: ${({ theme }) => theme.spacing(5)};
-  }
-`
-
-const TextWrapper = styled(SectionTextWrapper)`
-  margin-top: ${({ theme }) => theme.spacing(2)};
-
-  ${({ theme }) => theme.breakpoints.up('xs')} {
-    margin-top: ${({ theme }) => theme.spacing(3)};
+    margin-bottom: 0;
   }
 
   ${({ theme }) => theme.breakpoints.up('md')} {
-    width: 720px;
+    margin-bottom: 0;
   }
 
   ${({ theme }) => theme.breakpoints.up('xl')} {
@@ -46,8 +34,13 @@ const TextWrapper = styled(SectionTextWrapper)`
   }
 `
 
-const Title = styled(H1)`
-  margin-top: ${({ theme }) => theme.spacing(1)};
+const StyledTextWrapper = styled(SectionTextWrapper)`
+  margin-top: ${({ theme }) => theme.spacing(3)};
+
+  ${({ theme }) => theme.breakpoints.up('md')} {
+    margin-top: ${({ theme }) => theme.spacing(7)};
+    width: 720px;
+  }
 `
 
 interface Props {
@@ -58,14 +51,13 @@ interface Props {
 export function HeroSection({ title, tagline }: Props) {
   return (
     <StyledContainer>
-      <ContentWrapper>
+      <StyledContentWrapper>
         <NavBar />
-        <TextWrapper>
-          <Overline>Guide</Overline>
-          <Title>{title}</Title>
+        <StyledTextWrapper>
+          <H1 as="h1">{title}</H1>
           <Tagline>{tagline}</Tagline>
-        </TextWrapper>
-      </ContentWrapper>
+        </StyledTextWrapper>
+      </StyledContentWrapper>
     </StyledContainer>
   )
 }

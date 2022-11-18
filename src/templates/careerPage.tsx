@@ -7,13 +7,13 @@ import {
   MarkdownPageProps,
 } from '../components/templates/shared'
 
-export function GuidePage(props: MarkdownPageProps) {
-  return <MarkdownPage {...props} overline="Guides" />
+export function CareerPage(props: MarkdownPageProps) {
+  return <MarkdownPage {...props} overline="Careers" />
 }
 
-export default GuidePage
+export default CareerPage
 
-export const Head = createMarkdownPageHead({ overline: 'Guides' })
+export const Head = createMarkdownPageHead({ overline: 'Careers' })
 
 export const query = graphql`
   query ($slug: String!, $imageFilesPath: String!) {
