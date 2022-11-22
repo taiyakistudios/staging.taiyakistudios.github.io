@@ -1,7 +1,11 @@
 import styled from '@emotion/styled'
 import React from 'react'
 
-import { SectionContainer, SectionContentWrapper, SectionCtaButton } from '../../shared'
+import {
+  SectionContainer,
+  SectionContentWrapper,
+  SectionGatsbyCtaButton,
+} from '../../shared'
 
 const Container = styled(SectionContainer)`
   background-color: rgba(33, 33, 33, 1);
@@ -21,7 +25,7 @@ const Title = styled.h2`
   }
 `
 
-const CtaButton = styled(SectionCtaButton)`
+const CtaButton = styled(SectionGatsbyCtaButton)`
   margin-top: ${({ theme }) => theme.spacing(3)};
 
   ${({ theme }) => theme.breakpoints.up('sm')} {
@@ -40,7 +44,7 @@ export function JoinTeamSection({ title, ctaTitle, ctaLink }: Props) {
     <Container>
       <ContentWrapper>
         <Title>{title}</Title>
-        <CtaButton href={ctaLink} target="_blank" rel="noopener noreferrer" isLight>
+        <CtaButton to="/careers" islight="true">
           {ctaTitle}
         </CtaButton>
       </ContentWrapper>
