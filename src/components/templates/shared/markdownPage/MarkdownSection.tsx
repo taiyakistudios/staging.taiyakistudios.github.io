@@ -3,7 +3,7 @@ import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image'
 import React from 'react'
 import Markdown, { Components } from 'react-markdown'
 
-import { SectionContainer, SectionContentWrapper } from '../../shared'
+import { SectionContainer, SectionContentWrapper } from '../../../shared'
 
 const Container = styled(SectionContainer)`
   min-height: auto;
@@ -93,6 +93,13 @@ const Image = styled(GatsbyImage)`
   overflow: hidden;
 `
 
+const HorizontalRule = styled.div`
+  border-bottom: 1px solid ${({ theme }) => theme.colors.common.black};
+  opacity: 0.1;
+  height: 1px;
+  margin: ${({ theme }) => theme.spacing(5, 0)};
+`
+
 const IFrame = styled.iframe`
   margin-top: ${({ theme }) => theme.spacing(1)};
   border-radius: ${({ theme }) => theme.spacing(1)};
@@ -151,6 +158,7 @@ export function MarkdownSection({ rawMarkdownBody, imagesByName }: Props) {
               ol: (props) => <OrderedList {...props} />,
               ul: (props) => <UnorderedList {...props} />,
               code: (props) => <Code {...props} />,
+              hr: (props) => <HorizontalRule {...props} />,
               img: renderImg,
               a: renderA,
             }}

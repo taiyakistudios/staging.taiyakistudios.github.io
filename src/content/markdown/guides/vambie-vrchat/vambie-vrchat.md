@@ -4,6 +4,7 @@ category: 'guide'
 date: '2022-11-15'
 title: 'Vambie - VRChat'
 description: 'Get your Vambie working with VRChat'
+published: true
 ---
 
 VRChat requires you to upload custom avatars from within the Unity Editor. This guide was verified to work on Windows.

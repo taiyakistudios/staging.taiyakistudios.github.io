@@ -4,6 +4,7 @@ category: 'guide'
 date: '2022-11-15'
 title: 'Vambie - VTube Studio'
 description: 'Get your Vambie working with VTube Studio'
+published: true
 ---
 
 LIVE2D avatars can be operated via VTube studio, either on a Windows computer or on iOS.

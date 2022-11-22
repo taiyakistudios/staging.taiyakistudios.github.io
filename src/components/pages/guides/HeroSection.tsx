@@ -13,18 +13,20 @@ import {
 const StyledContainer = styled(SectionContainer)`
   position: relative;
   min-height: auto;
-
-  ${({ theme }) => theme.breakpoints.up('xs')} {
-    min-height: 50vh;
-  }
 `
 
 const StyledContentWrapper = styled(SectionContentWrapper)`
   margin-top: ${({ theme }) => theme.spacing(2)};
+  margin-bottom: 0;
   z-index: 2;
 
   ${({ theme }) => theme.breakpoints.up('xs')} {
     margin-top: ${({ theme }) => theme.spacing(3)};
+    margin-bottom: 0;
+  }
+
+  ${({ theme }) => theme.breakpoints.up('md')} {
+    margin-bottom: 0;
   }
 
   ${({ theme }) => theme.breakpoints.up('xl')} {
@@ -37,6 +39,7 @@ const StyledTextWrapper = styled(SectionTextWrapper)`
 
   ${({ theme }) => theme.breakpoints.up('md')} {
     margin-top: ${({ theme }) => theme.spacing(7)};
+    width: 720px;
   }
 `
 

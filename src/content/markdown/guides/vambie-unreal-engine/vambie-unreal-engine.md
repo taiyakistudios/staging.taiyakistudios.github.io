@@ -4,6 +4,7 @@ category: 'guide'
 date: '2022-11-15'
 title: 'Vambie - Unreal Engine'
 description: 'Get your Vambie working with Unreal Engine'
+published: true
 ---
 
 ## Downloads

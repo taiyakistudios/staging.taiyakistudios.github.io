@@ -4,6 +4,7 @@ category: 'guide'
 date: '2022-11-15'
 title: 'Vambie - Animaze'
 description: 'Get your Vambie working with Animaze'
+published: true
 ---
 
 Animaze for iOS is best used to create picture or short video content for Instagram/Tiktok/Youtube Shorts.

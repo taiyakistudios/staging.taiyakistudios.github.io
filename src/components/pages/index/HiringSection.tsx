@@ -6,7 +6,7 @@ import {
   H2,
   SectionContainer,
   SectionContentWrapper,
-  SectionCtaButton,
+  SectionGatsbyCtaButton,
   SectionTextWrapper,
   Tagline,
 } from '../../shared'
@@ -55,9 +55,7 @@ export function HiringSection({ title, tagline, ctaTitle, ctaLink }: Props) {
         <TextWrapper>
           <H2>{title}</H2>
           <Tagline>{tagline}</Tagline>
-          <SectionCtaButton href={ctaLink} target="_blank" rel="noopener noreferrer">
-            {ctaTitle}
-          </SectionCtaButton>
+          <SectionGatsbyCtaButton to="/careers">{ctaTitle}</SectionGatsbyCtaButton>
         </TextWrapper>
       </ContentWrapper>
     </Container>

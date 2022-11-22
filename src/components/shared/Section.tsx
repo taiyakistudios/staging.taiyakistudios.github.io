@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { ContainedButton } from './Buttons'
+import { ContainedButton, ContainedGatsbyButton } from './Buttons'
 
 export const SectionContainer = styled.section`
   display: flex;
@@ -48,5 +48,9 @@ export const SectionCtaButtonsWrapper = styled.div`
 `
 
 export const SectionCtaButton = styled(ContainedButton)`
+  margin-top: ${({ theme }) => theme.spacing(4)};
+`
+
+export const SectionGatsbyCtaButton = styled(ContainedGatsbyButton)`
   margin-top: ${({ theme }) => theme.spacing(4)};
 `

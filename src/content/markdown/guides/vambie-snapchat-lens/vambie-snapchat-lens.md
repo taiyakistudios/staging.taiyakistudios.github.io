@@ -4,6 +4,7 @@ category: 'guide'
 date: '2022-11-15'
 title: 'Vambie - Snapchat Lens'
 description: 'Get your Vambie working with Snapchat Lens'
+published: true
 ---
 
 ## Downloads
