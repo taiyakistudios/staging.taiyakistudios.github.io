@@ -7,7 +7,6 @@ import {
   HeroSection,
   HiringSection,
   ProjectsSection,
-  VambieSection,
 } from '../components/pages/index'
 import { DefaultHead, Footer, Layout } from '../components/shared'
 import content from '../content/yaml/index.yaml'
@@ -24,11 +23,6 @@ function IndexPage() {
           secondaryCtaTitle={content.hero.secondary_cta_title}
           secondaryCtaLink={content.hero.secondary_cta_link}
         />
-        <VambieSection
-          title={content.vambie.title}
-          ctaTitle={content.vambie.cta_title}
-          ctaLink={content.vambie.cta_link}
-        />
         <BusinessSection
           overline={content.business.overline}
           title={content.business.title}
@@ -40,6 +34,8 @@ function IndexPage() {
         <ProjectsSection
           overline={content.projects.overline}
           projects={content.projects.items}
+          ctaTitle={content.projects.cta_title}
+          ctaLink={content.projects.cta_link}
         />
         <HiringSection
           title={content.hiring.title}

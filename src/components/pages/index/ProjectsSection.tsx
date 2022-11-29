@@ -8,6 +8,7 @@ import {
   H3,
   SectionContainer,
   SectionContentWrapper,
+  SectionCtaButton,
   SectionTextWrapper,
 } from '../../shared'
 
@@ -134,6 +135,18 @@ const ProjectItem = styled(H1.withComponent('a'))`
   }
 `
 
+const MainCtaButton = styled(SectionCtaButton)`
+  margin-top: ${({ theme }) => theme.spacing(6)};
+
+  ${({ theme }) => theme.breakpoints.up('sm')} {
+    margin-top: ${({ theme }) => theme.spacing(8)};
+  }
+
+  ${({ theme }) => theme.breakpoints.up('md')} {
+    margin-top: ${({ theme }) => theme.spacing(10)};
+  }
+`
+
 interface Props {
   overline: string
   projects: {
@@ -141,9 +154,11 @@ interface Props {
     link?: string
     imageName: string
   }[]
+  ctaTitle: string
+  ctaLink: string
 }
 
-export function ProjectsSection({ overline, projects }: Props) {
+export function ProjectsSection({ overline, projects, ctaTitle, ctaLink }: Props) {
   const [hoveredIndex, setHoveredIndex] = useState(0)
 
   const result = useStaticQuery(graphql`
@@ -214,6 +229,9 @@ export function ProjectsSection({ overline, projects }: Props) {
             </ProjectItemsWrapperText>
             {renderProjectItems()}
           </ProjectItemsWrapper>
+          <MainCtaButton href={ctaLink} target="_blank" rel="noopener noreferrer">
+            {ctaTitle}
+          </MainCtaButton>
         </TextWrapper>
         {currentImage && (
           <DesktopImageContainer>

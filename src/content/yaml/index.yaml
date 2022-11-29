@@ -1,11 +1,11 @@
 title: Taiyaki Studios
 
 hero:
-  title: Avatars, production tools, and community resources for next-gen media
+  title: Avatars, production tools, and community resources for VTubers and Virtual Influencers
   tagline: |
-    Taiyaki Studios builds avatars and avatar collections optimized for Tiktok and Youtube content creation. 
-    The future of media is social-first, powered by virtual characters, and supercharged by fan-generated 
-    content. We’re here for it.
+    Taiyaki Studios is a tech-enabled talent agency for VTubers and Virtual Influencers. 
+    We work with Twitch, Youtube, Tiktok, and Instagram content creators to bring characters to 
+    life using the Unreal Engine, Live2D, and VRChat.
   main_cta_title: Join Our Discord Community
   main_cta_link: https://discord.gg/ZhMGDB5tUV
   secondary_cta_title: Partner With Us
@@ -20,33 +20,40 @@ business:
   overline: Enabling content creators
   title: Partner with us
   tagline: |
-    Whether it’s 1 or 10,000 avatars - let’s talk. Our avatars are designed for real-time content creation, 
-    enabling avatar holders to create Tiktok and Youtube content at the same pace as live-action content.
+    We provide our partners with custom 3D/2D avatars, motion capture hardware they can run in 
+    their living rooms, and career support from our in-house management team. We are constantly 
+    building new tech to empower our partners to create high fidelity content more easily and autonomously.
   cta_title: Partner With Us
   cta_link: https://share.hsforms.com/1VUC3J7BMRgeL2-rflEEG3wdfel3
   blocks:
     - title: Multi-Format Support
       body: |
-        Our avatar collections export to FBX w/ Unreal support, VRM, VRChat, Snap Lenses, and 
-        more allowing creators to use a variety of tools to create avatar content real time.
+        We support you wherever you want to be seen. Stream from the Unreal Engine or using Live2D, wear your 
+        avatar in VRChat, or even import it into Animaze or give your fans a Snap Lens to play with.
+    - title: Ongoing Tech Support
+      body: |
+        We push out new tech to our partners monthly, whether it’s easier to use motion capture or image 
+        generation tools powered by the latest AI, Taiyaki has an entire team working full time on R&D to 
+        support all of our partners.
     - title: No Technical Experience Required
       body: |
         Use your face and body to control virtual characters without any prior 3D, animation, or motion 
         capture experience.
-    - title: Generative Avatar Collections
-      body: |
-        We can get thousands of avatars in the hands of your fans and help manage your own community of 
-        fans generating content with your IP.
 
 projects:
-  overline: Check out other projects we’ve been working on
+  overline: What we’ve been up to
   items:
+    - name: YBGhosty
+      link: https://www.instagram.com/ybghosty/
+      imageName: project-ybghosty
     - name: Mister Yaki
       link: https://www.youtube.com/c/TaiyakiStudios
       imageName: project-mryaki
-    - name: Vambie
+    - name: The Vambies
       link: https://vambie.com
       imageName: project-vambie
+  cta_title: Partner With Us
+  cta_link: https://share.hsforms.com/1VUC3J7BMRgeL2-rflEEG3wdfel3
 
 hiring:
   title: We’re hiring
