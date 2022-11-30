@@ -4,7 +4,6 @@ import React from 'react'
 
 import {
   H2,
-  Overline,
   SectionContainer,
   SectionContentWrapper,
   SectionCtaButton,
@@ -21,12 +20,6 @@ const MainContentWrapper = styled(SectionContentWrapper)`
 `
 
 const MainTextWrapper = styled(SectionTextWrapper)`
-  margin-top: ${({ theme }) => theme.spacing(5)};
-
-  ${({ theme }) => theme.breakpoints.up('sm')} {
-    margin-top: ${({ theme }) => theme.spacing(9)};
-  }
-
   ${({ theme }) => theme.breakpoints.up('md')} {
     width: 800px;
   }
@@ -92,14 +85,7 @@ interface Props {
   }[]
 }
 
-export function BusinessSection({
-  overline,
-  title,
-  tagline,
-  ctaTitle,
-  ctaLink,
-  blocks,
-}: Props) {
+export function BusinessSection({ title, tagline, ctaTitle, ctaLink, blocks }: Props) {
   function renderGridItems() {
     return blocks.map((block, index) => (
       <BottomGirdItem key={index}>
@@ -124,7 +110,6 @@ export function BusinessSection({
           }}
         />
         <MainContentWrapper>
-          <Overline>{overline}</Overline>
           <MainTextWrapper>
             <H2>{title}</H2>
             <Tagline>{tagline}</Tagline>
